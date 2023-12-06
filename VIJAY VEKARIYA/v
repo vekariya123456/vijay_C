@@ -1,0 +1,28 @@
+//wp is factariyal pogram in c .
+
+#include<stdio.h>
+int fact(int n);
+int fact(int n)
+{
+ int ans;
+ 
+	
+		if(n<=1)
+		{	
+			return 1;
+		}else
+		{
+			ans=n*fact(n-1);
+		}
+	return ans;
+}
+
+
+void main()
+{
+int a,s;
+scanf("%d",&a);
+s=fact(a);
+printf("\n%d! = %d ",a,s);
+//printf("%d",s);
+} 
